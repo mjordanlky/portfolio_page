@@ -1,0 +1,226 @@
+main.css
+
+/******************************
+General
+******************************/
+
+/***********************
+Font
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+***********************/
+.mainHeader {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: forestgreen;
+    box-sizing: border-box;
+}
+
+/*************************
+Anchor Elements
+*************************/
+a {
+    text-decoration: none;
+    color: forestgreen;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/******************************
+Heading
+******************************/
+#topPage1 {
+    margin-bottom: 12px;
+}
+
+#topPage2 {
+    margin-top: 12px;
+}
+
+
+/******************************
+Navigation Menu
+******************************/
+
+#navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.mainMenu {
+    display: none;
+}
+
+
+
+/******************************
+Portfolio Intro Paragraphs
+******************************/
+
+.middlePage {
+    padding: 3% 5%;
+}
+
+/******************************
+Portfolio Articles
+******************************/
+
+.newsAndVideo{
+  background:white;
+  padding:20px;
+}
+
+#topVideo{
+  background:black;
+  color:white;
+  height:300px;
+}
+
+#leftColumn{
+    background:blue;
+    color:white;
+    height:100px;
+}
+
+#rightColumn{
+  background:green;
+  color:white;
+  height:100px;
+}
+
+/******************************
+Family Pics (jQuery for shadowbox?)
+******************************/
+
+.familyPhotos {
+    background: grey;
+    height: 500px;
+}
+
+.famPhotos {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.photo {
+    max-width: 100%;
+}
+
+.eachPhoto img {
+    display: block;
+}
+
+
+/*************************
+Woodworking Pics (jQuery for shadowbox?)
+*************************/
+
+.woodworkingPhotos {
+    background: grey;
+    height: 500px;
+    width: 100%;
+}
+
+/******************************
+Interesting Articles
+******************************/
+
+.interestingArticles {
+    background: grey;
+    height: 500px;
+    width: 100%;
+}
+
+
+/******************************
+Media Queries
+******************************/
+
+
+@media (min-width: 769px) {
+    .menuTrigger {
+        display: none;
+    }
+    
+    #navMenu {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: blueviolet;
+    }
+    
+    #navMenu a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: grey;
+        border-top: 2px solid #777777;
+        border-right: 2px solid #333333;
+        border-bottom: 2px solid #444444;
+        border-left: 2px solid #777777;
+        color: white;
+    }
+
+    
+}
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+    .menuTrigger {
+        display: none;
+    }
+    
+    #navMenu {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: blueviolet;
+    }
+    
+    #navMenu a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: grey;
+        border-top: 2px solid #777777;
+        border-right: 2px solid #333333;
+        border-bottom: 2px solid #444444;
+        border-left: 2px solid #777777;
+        color: white;
+
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,176 @@
+/******************************
+Flexbox
+******************************/
+
+#topPage1,
+#topPage2 {
+    display: flex;
+    background: yellow;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.middlePage {
+    display: flex;
+    background: pink;
+    flex-wrap: wrap;
+}
+
+.newsAndVideo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#leftColumn {
+    background-color: lightseagreen;
+}
+
+#rightColumn {
+    background-color: darkmagenta;
+}
+
+#topVideo {
+    justify-content: center;
+}
+
+.topNews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.mainFooter {
+    display: flex;
+    margin-top: auto;
+}
+
+
+
+
+/******************************
+Media Queries
+******************************/
+
+@media (min-width: 769px) {
+    
+    .mainHeader,
+    #navMenu,
+    .newsAndVideo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    #navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    .mainMenu {
+        display: flex;
+    }
+    
+    .mainHeader {
+        flex-direction: column;
+    }
+    
+    .mainHeader,
+    #navMenu {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #topVideo {
+        width:100%;
+        margin:0;
+    }
+
+    #leftColumn {
+        width: 50%;
+        margin:0;
+    }
+    
+    #rightColumn {
+        width:50%;
+        margin:0;
+    }
+    
+    .famPhotos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .eachPhoto {
+        width: 50%;
+    }
+    
+    
+}
+
+@media (min-width: 1025px) {
+    
+    .mainHeader {
+        max-width: 1150px;
+    }
+    
+    .mainMenu {
+        display: flex;
+    }
+    
+    .newsAndVideo,
+    .mainHeader {
+        justify-content: space-between;
+   }
+    
+    #leftColumn {
+        order: -1;
+        width:25%;
+        height:300px;
+   }
+
+    #rightColumn {
+        width:25%;
+        order: 3;
+        height:300px;
+   }
+    #topVideo {
+        width:50%;
+        order: 1;
+   }
+    
+    .eachPhoto {
+        width: 33.33333%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
