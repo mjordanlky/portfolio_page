@@ -1,81 +1,101 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Jordan Larimore | Front End Developer</title>
-    <link rel="stylesheet" href="CSS/normalize.css"
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800|Roboto:400,900" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="jS/script.js">
-    <link rel="stylesheet" href="CSS/flexbox.css">
-    <link rel="stylesheet" href="jS/script.js">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Jordan Larimore | Front End Developer</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800|Roboto:400,900" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/flexbox.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
     
-<body>
-    <header>
-        <section class="mainHeader">
-            <h1 id="topPage1">Jordan Larimore</h1>
-            <h2 id="topPage2">Front End Developer</h2>
-        </section>
-
-        
-        <span class="menuTrigger">MENU</span>
-            <nav>
-            <div class="mainMenu">
-            <input type="checkbox" id="showMenu" role="button">
-                <ul id="navMenu">
-                    <li><a href="index.html" class="selected">Portfolio</a></li>
+<!--Page Title-->
+<header>
+    <section class="mainHeader">
+        <h1 id="topPage1">Jordan Larimore</h1>
+        <h2 id="topPage2">Front End Developer</h2>
+    </section>
+</header>
+    
+<!--Navigation Bar-->
+<body background="Pics/potentialBackground.jpg">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle col-xs-12 col-xs-push-6" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html" class="selected">Home</a></li>
                     <li><a href="famPics.html">Family Pictures</a></li>
                     <li><a href="wwPics.html">Woodworking</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                    <li><a href="about.html">About</a>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
             </div>
-            </nav>
 
-    </header>
-
+<!--Website Intro-->
         <div>
-            <section class="middlePage">
-                <p>Welcome to the webpage intro. Welcome to the webpage intro. Welcome to the webpage intro. Welcome to the webpage intro. Welcome to the webpage intro. Welcome to the webpage intro. </p>
-                <p>What you'll find on my webpage. What you'll find on my webpage. What you'll find on my webpage. What you'll find on my webpage. What you'll find on my webpage. What you'll find on my webpage. What you'll find on my webpage. </p>
-            </section>
+            <div class="middlePage">
+                <div>
+                <p class="topIntro">Welcome to my webpage!</p>
+                <p>Below you'll see some interesting articles that could vary in topcs ranging from workplace motivation, millennials and other generations, sports, economics, and anything in between.</p>
+                <p>Check out the other pages where you can view pictures of my family and woodworking projects, and learn a little about me. Enjoy! </p>
+                </div>
+            </div>
         </div>
+    
+<!--    Articles and Videos-->
         <div class="newsAndVideo">
 
-            <ul id="topVideo">
-                <li class="topVideo">Youtube Video</li>
-                    <a></a>
+            <ul id="topVideo" width="768" height="300">
+                
+                <iframe class="youtube" width="100%" height="300" src="https://www.youtube.com/embed/WyMpZTba5Tc" frameborder="0" allowfullscreen></iframe>
+                
             </ul>
 
             <ul id="leftColumn">
-                <li  class="topNewsX">Topic 1</li>
-                    <a href=""></a>
-                <li  class="topNewsX">Topic 2 </li>
-                    <a href=""></a>
+                <li  class="topNewsX"></li>
+                    <a class="news1" href="https://www.theatlantic.com/business/archive/2013/04/the-unluckiest-generation-what-will-become-of-millennials/275336/"><img class="newsIMG  topLeftIMG" src="Pics/unluckyMillennial.jpg" alt="What Will Become of Millennials?"><p class="imgText">The Unluckiest Generation: What Will Become of Millennials?</p></a>
+                <li  class="topNewsX"></li>
+                    <a class="news1" href="http://www.inc.com/elizabeth-dukes/5-dangerous-misconceptions-about-millennial-professionals.html"><img class="newsIMG bottomLeftIMG" src="Pics/5miscMillennials.jpg" alt="5 Dangerous Misconceptions About Millennial Professionals"><p class="imgText">5 Dangerous Misconceptions About Millennial Professionals</p></a>
             </ul>
 
             <ul  id="rightColumn">
-                <li  class="topNewsX">Topic 3</li>
-                    <a href=""></a>
-                <li  class="topNewsX">Topic 4</li>
-                    <a href=""></a>
+                <li  class="topNewsX"></li>
+                    <a class="news1"  href="https://www.entrepreneur.com/article/270764"><img class="newsIMG" src="Pics/MotivateMillenials.jpeg" alt="How to Motivate Millennials"><p class="imgText">How to Motivate Millennials, By Millennials</p></a>
+                <li  class="topNewsX"></li>
+                    <a class="news1"  href="https://hbr.org/2016/08/millennials-are-actually-workaholics-according-to-research"><img class="newsIMG bottomRightIMG" src="Pics/milWorkaholic.jpg" alt="Millennials Are Actually Workaholics"><p class="imgText">Millennials Are Actually Workaholics, According to Research</p></a>
             </ul>
         </div>
 
+<!--Footer-->
     <footer class="mainFooter">
-
-    <!--    command+forward slash-->
+        <div class="footer">
+ 
     <!--    LinkedIn-->
-
-    <!--Facebook-->
-        <a href="http://facebook.com/jlarimore"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-
-    <!--Twitter-->
-        <a href="http://twitter.com/jordanlarimore"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <p>&copy; 2017 Jordan Larimore</p>
+            <a href="https://www.linkedin.com/in/jlarimore"><img src="Pics/linkedInLogo.png" alt="LinkedIn Logo" class="social-icon linkedInIcon"></a>
+        <!--Facebook-->
+            <a href="http://facebook.com/jlarimore"><img src="Pics/fbLogo.png" alt="Facebook Logo" class="social-icon"></a>
+        <!--Twitter-->
+            <a href="http://twitter.com/intent/tweet?screen_name=jordanlarimore"><img src="Pics/twitterLogo.png" alt="Twitter Logo" class="social-icon"></a>
+            <p class="copyRight">&copy; 2017 Jordan Larimore</p>
+        </div>
     </footer>
-
+    
+<!--    jQuery CDN, link to app.js, Bootstrap CDN-->
+        <script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="jS/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

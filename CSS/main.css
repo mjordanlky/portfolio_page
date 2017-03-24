@@ -4,6 +4,9 @@ main.css
 General
 ******************************/
 
+
+
+
 /***********************
 Font
     font-family: 'Roboto', sans-serif;
@@ -15,20 +18,36 @@ Font
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: forestgreen;
     box-sizing: border-box;
+    padding-top: 50px;
+    background-size: 100% 100%;
 }
+
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.linkedInIcon {
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.copyRight {
+    margin-top: 20px;
+    margin-left: 30%
+}
+
+
 
 /*************************
 Anchor Elements
 *************************/
 a {
     text-decoration: none;
-    color: forestgreen;
-}
-
-a:hover {
-    color: lightgreen;
 }
 
 ul {
@@ -37,6 +56,9 @@ ul {
     padding: 0;
 }
 
+p {
+    color: whitesmoke;
+}
 
 /******************************
 Heading
@@ -49,22 +71,31 @@ Heading
     margin-top: 12px;
 }
 
+.mainHeader {
+    color: white;  
+    padding-bottom: 10px;
+}
+
 
 /******************************
 Navigation Menu
 ******************************/
 
-#navMenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
+.nav .navbar-nav {
+    
+    display: inline-block;
+    float: none;
+    vertical-align: top;
 }
 
-.mainMenu {
-    display: none;
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
+.icon-bar {
+    display: block;
+    text-align: center;
+}
 
 
 /******************************
@@ -72,79 +103,117 @@ Portfolio Intro Paragraphs
 ******************************/
 
 .middlePage {
-    padding: 3% 5%;
-}
+    padding: 0% 5%;
+    color: mintcream;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+}   
 
 /******************************
 Portfolio Articles
 ******************************/
 
 .newsAndVideo{
-  background:white;
   padding:20px;
 }
 
 #topVideo{
-  background:black;
-  color:white;
   height:300px;
 }
 
 #leftColumn{
-    background:blue;
-    color:white;
-    height:100px;
+    margin-bottom: -15%;
+    margin-top: 30px;
 }
+
+.newsIMG {
+  width: 100%;
+  border-style: solid;
+  border-width : 1px 1px 1px 1px;
+  border-radius: 5px;
+  text-decoration : none;
+  padding : 4px black;
+  border-color : #000000
+}
+
+.imgText {
+    text-align: center;
+    font-size: 1em;
+}
+
 
 #rightColumn{
-  background:green;
-  color:white;
-  height:100px;
+  margin-top: 15%;  
 }
+
 
 /******************************
-Family Pics (jQuery for shadowbox?)
+Pics 
 ******************************/
 
-.familyPhotos {
-    background: grey;
-    height: 500px;
-}
-
-.famPhotos {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 1rem;
-}
 
 .photo {
-    max-width: 100%;
-}
-
-.eachPhoto img {
-    display: block;
+    max-width: 485px;
+    width: 100%;
+    border: 10px solid black;
+    margin-bottom: 10px;
 }
 
 
 /*************************
-Woodworking Pics (jQuery for shadowbox?)
+jQuery lightbox
 *************************/
-
-.woodworkingPhotos {
-    background: grey;
-    height: 500px;
+#overlay {
+    background: rgba(0,0,0,0.7); 
     width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
 }
+
+    #overlay img {
+    margin-top: 6%
+    }
+
+    #overlay img { 
+    max-width: 60%; 
+    max-height:90%; 
+    }
+    
 
 /******************************
-Interesting Articles
+About Page
 ******************************/
 
-.interestingArticles {
-    background: grey;
-    height: 500px;
-    width: 100%;
+.profilePic {
+    border-radius: 50%;
+    max-height: 500px;
+    max-width: 100%;
 }
+
+.contactPage div h3 {
+    color: mintcream;
+}
+
+.aboutMeInfo {
+    padding: 10px 20px;
+    color: mintcream;
+    text-align: center;
+}
+
+.aboutMeInfo h3 {
+    font-size: xx-large;
+}
+
+.aboutMeInfo p {
+    font-size: large;
+}
+
+
 
 
 /******************************
@@ -153,29 +222,55 @@ Media Queries
 
 
 @media (min-width: 769px) {
-    .menuTrigger {
-        display: none;
+    
+    .topLeftIMG {
+        height: 45%
     }
     
-    #navMenu {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        background-color: blueviolet;
+    .bottomLeftIMG {
+        height: 45%
     }
     
-    #navMenu a {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 25px;
-        padding-right: 25px;
-        background-color: grey;
-        border-top: 2px solid #777777;
-        border-right: 2px solid #333333;
-        border-bottom: 2px solid #444444;
-        border-left: 2px solid #777777;
-        color: white;
+    .newsAndVideo p {
+        font-size: 95%;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        margin: 30px 50px 0px 50px;
     }
 
+    .linkedInIcon {
+        width: 100px;
+        height: 40px;
+        margin: 30px 50px 0px 100px;
+    }
+
+    .copyRight {
+        margin-top: 20px;
+        margin-left: 40%
+}
+    .eachPhoto {
+        padding-left: 10px;
+        padding-right: 2px;
+    }
+        
+    .FamPhoto {
+        margin-top: 10%;
+    }
+    
+    .jordanDrew {
+        margin-top: 6%;
+    }
+    
+    .planterPic {
+        margin-top: 7%;
+    }
+
+    .wyBed {
+        margin-top: 6%;
+    }
     
 }
 
@@ -209,7 +304,63 @@ Media Queries
         color: white;
 
 }
+    .youtube {
+        min-height: 500px;
+    }
     
+    #rightColumn img {
+        max-height: 60%;
+    }
+    
+    .bottomRightIMG {
+        margin-top: 15%;
+    }
+    
+    .topLeftIMG {
+        height: 60%
+    }
+    
+    .bottomLeftIMG {
+        height: 55%;
+        margin-top: 10%
+    
+    }
+    
+
+    
+    .eachPhoto {
+        padding-left: 10px;
+        padding-right: 2px;
+        max-width: 400px;
+        max-height: 400px;
+    }
+    
+    .FamPhoto {
+        margin-top: 60px;
+    }
+    
+    .jordanDrew {
+        margin-top: 40px;
+    }
+    
+    .wwPhotos .eachPhoto {
+        max-width: 345px;
+    }
+    
+    .wyBed {
+        margin-top: 80px;
+    }
+    
+    .farmTable {
+        margin-top: 40px;
+    }
+    
+    .planterPic {
+        margin-top: 40px;
+    }
+
+    
+
 }
 
 
