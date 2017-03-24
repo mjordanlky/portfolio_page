@@ -3,23 +3,18 @@ Flexbox
 ******************************/
 
 #topPage1,
-#topPage2 {
+#topPage2,
+body,
+.famPhotos,
+.wwPhotos,
+.aboutMe {
     display: flex;
-    background: yellow;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#navMenu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-
 .middlePage {
     display: flex;
-    background: pink;
     flex-wrap: wrap;
 }
 
@@ -27,14 +22,6 @@ Flexbox
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-#leftColumn {
-    background-color: lightseagreen;
-}
-
-#rightColumn {
-    background-color: darkmagenta;
 }
 
 #topVideo {
@@ -47,13 +34,16 @@ Flexbox
     flex-direction: column;
 }
 
-.mainFooter {
+.contactPage {
     display: flex;
-    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-
+.aboutMe {
+    flex-direction: column;
+    align-items: center;
+    }
 
 /******************************
 Media Queries
@@ -62,29 +52,18 @@ Media Queries
 @media (min-width: 769px) {
     
     .mainHeader,
-    #navMenu,
     .newsAndVideo {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
-    
-    #navMenu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
-    
-    .mainMenu {
-        display: flex;
-    }
+
     
     .mainHeader {
         flex-direction: column;
     }
     
-    .mainHeader,
-    #navMenu {
+    .mainHeader {
         width: 100%;
         margin: 0 auto;
     }
@@ -92,6 +71,7 @@ Media Queries
     #topVideo {
         width:100%;
         margin:0;
+        height: auto
     }
 
     #leftColumn {
@@ -103,6 +83,7 @@ Media Queries
         width:50%;
         margin:0;
     }
+    
     
     .famPhotos {
         display: flex;
@@ -115,16 +96,13 @@ Media Queries
     }
     
     
+    
 }
 
 @media (min-width: 1025px) {
     
     .mainHeader {
         max-width: 1150px;
-    }
-    
-    .mainMenu {
-        display: flex;
     }
     
     .newsAndVideo,
@@ -134,27 +112,53 @@ Media Queries
     
     #leftColumn {
         order: -1;
-        width:25%;
-        height:300px;
+        width:29%;
+        max-width: 380px;
+        height:330px;
+        margin-right: 1%;
    }
 
     #rightColumn {
-        width:25%;
+        width:29%;
+        max-width: 380px;
         order: 3;
-        height:300px;
+        height:330px;
+        margin-left: 1%
+        
    }
     #topVideo {
-        width:50%;
+        width:40%;
         order: 1;
    }
     
     .eachPhoto {
         width: 33.33333%;
     }
+    
+    .aboutMe {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .aboutMeSection {
+        width: 50%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .profilePic {
+        margin-left: 100px;
 
+    }
+    
+    .aboutMeInfo {
+        padding: 0px 30px;
+    }
+    
 }
-
-
+    
 
 
 
