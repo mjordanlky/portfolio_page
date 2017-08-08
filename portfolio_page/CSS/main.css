@@ -1,0 +1,441 @@
+main.css
+
+/******************************
+General
+******************************/
+
+
+
+
+/***********************
+Font
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+***********************/
+.mainHeader {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding-top: 50px;
+    background-size: 100% 100%;
+}
+
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.linkedInIcon {
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.copyRight {
+    margin-top: 20px;
+    margin-left: 30%
+}
+
+
+
+/*************************
+Anchor Elements
+*************************/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: whitesmoke;
+}
+
+/******************************
+Heading
+******************************/
+#topPage1 {
+    margin-bottom: 12px;
+}
+
+#topPage2 {
+    margin-top: 12px;
+}
+
+.mainHeader {
+    color: white;  
+    padding-bottom: 10px;
+}
+
+
+/******************************
+Navigation Menu
+******************************/
+
+.nav .navbar-nav {
+    
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.icon-bar {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/******************************
+Portfolio Intro Paragraphs
+******************************/
+
+.middlePage {
+    padding: 0% 5%;
+    color: mintcream;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+}   
+
+/******************************
+Portfolio Articles
+******************************/
+
+.newsAndVideo{
+  padding:20px;
+}
+
+#topVideo{
+    height:330px;
+}
+
+#leftColumn{
+    margin-bottom: -15%;
+    margin-top: 30px;
+}
+
+.newsIMG {
+  width: 100%;
+  border-style: solid;
+  border-width : 1px 1px 1px 1px;
+  border-radius: 5px;
+  text-decoration : none;
+  padding : 4px black;
+  border-color : #000000
+}
+
+.imgText {
+    text-align: center;
+    font-size: 1em;
+}
+
+
+#rightColumn{
+  margin-top: 15%;  
+}
+
+
+/******************************
+Pics 
+******************************/
+
+
+.photo {
+    max-width: 485px;
+    width: 100%;
+    border: 10px solid black;
+    margin-bottom: 10px;
+}
+
+
+/*************************
+jQuery lightbox
+*************************/
+#overlay {
+    background: rgba(0,0,0,0.7); 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+    #overlay img {
+    margin-top: 6%
+    }
+
+    #overlay img { 
+    max-width: 60%; 
+    max-height:90%; 
+    }
+    
+
+/******************************
+About Page
+******************************/
+
+.profilePic {
+    border-radius: 50%;
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.contactPage div h3 {
+    color: mintcream;
+}
+
+.aboutMeInfo {
+    padding: 10px 20px;
+    color: mintcream;
+    text-align: center;
+}
+
+.aboutMeInfo h3 {
+    font-size: xx-large;
+}
+
+.aboutMeInfo p {
+    font-size: large;
+}
+
+
+
+
+/******************************
+Media Queries
+******************************/
+
+
+@media (min-width: 769px) {
+    
+    .topLeftIMG {
+        height: 45%
+    }
+    
+    .bottomLeftIMG {
+        height: 45%
+    }
+    
+    .newsAndVideo p {
+        font-size: 95%;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        margin: 30px 50px 0px 50px;
+    }
+
+    .linkedInIcon {
+        width: 100px;
+        height: 40px;
+        margin: 30px 50px 0px 100px;
+    }
+
+    .copyRight {
+        margin-top: 20px;
+        margin-left: 40%
+}
+    .eachPhoto {
+        padding-left: 10px;
+        padding-right: 2px;
+    }
+        
+    .FamPhoto {
+        margin-top: 10%;
+    }
+    
+    .jordanDrew {
+        margin-top: 6%;
+    }
+    
+    .planterPic {
+        margin-top: 7%;
+    }
+
+    .wyBed {
+        margin-top: 6%;
+    }
+    
+    .mainHeader {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #topVideo {
+        width:100%;
+        margin-bottom:10;
+        height: 500px;
+    }
+
+    #leftColumn {
+        width: 50%;
+        margin:0;
+    }
+    
+    #rightColumn {
+        width:50%;
+        margin:0;
+    }
+    
+    .topLeftIMG {
+        height: 48%;
+    }
+    
+    .bottomLeftIMG {
+        height: 48%;
+    }
+    
+    .topRightIMG {
+        height: 48%;
+    }
+    
+    .bottomRightIMG {
+        height: 48%
+    }
+    
+    .eachPhoto {
+        width: 50%;
+    }
+    
+}
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+    .menuTrigger {
+        display: none;
+    }
+    
+    #navMenu {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: blueviolet;
+    }
+    
+    #navMenu a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: grey;
+        border-top: 2px solid #777777;
+        border-right: 2px solid #333333;
+        border-bottom: 2px solid #444444;
+        border-left: 2px solid #777777;
+        color: white;
+    }
+    
+    .mainHeader {
+        max-width: 1150px;
+    }
+    
+    .youtube {
+        min-height: 500px;
+    }
+    
+    #rightColumn img {
+        max-height: 60%;
+    }
+    
+    .bottomRightIMG {
+        margin-top: 8%;
+    }
+    
+    .topLeftIMG {
+        height: 275px;
+    }
+    
+    .topRightIMG {
+        height: 275px;
+    }
+    
+    .bottomLeftIMG {
+        height: 275px;
+        margin-top: 10%;
+    }
+    
+    .bottomRightIMG {
+        height: 275px;
+        margin-top: 10%;
+    }
+    
+    .newsAndVideo {
+        padding-bottom: 150px;
+    }
+    
+    #topVideo {
+        padding-top: 60px;
+        margin-right: 15px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .eachPhoto {
+        padding-left: 10px;
+        padding-right: 2px;
+        max-width: 400px;
+        max-height: 400px;
+    }
+    
+    .FamPhoto {
+        margin-top: 60px;
+    }
+    
+    .jordanDrew {
+        margin-top: 40px;
+    }
+    
+    .wwPhotos .eachPhoto {
+        max-width: 345px;
+    }
+    
+    .wyBed {
+        margin-top: 80px;
+    }
+    
+    .farmTable {
+        margin-top: 40px;
+    }
+    
+    .planterPic {
+        margin-top: 40px;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+/******************************
+Flexbox
+******************************/
+
+#topPage1,
+#topPage2,
+body,
+.famPhotos,
+.wwPhotos,
+.aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.middlePage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsAndVideo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#topVideo {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.topNews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe {
+    flex-direction: column;
+    align-items: center;
+    }
+
+/******************************
+Media Queries
+******************************/
+
+@media (min-width: 769px) {
+    
+    .mainHeader,
+    .newsAndVideo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .mainHeader {
+        flex-direction: column;
+    }
+    
+    .famPhotos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+ 
+    
+}
+
+@media (min-width: 1025px) {
+    
+    .mainHeader {
+        justify-content: space-between;
+   }
+    
+    #leftColumn {
+        order: -2;
+        width: 40%;
+        max-width: 420px;
+        max-height: 500px;
+        margin-right: 2%;
+   }
+
+    #rightColumn {
+        width:40%;
+        max-width: 420px;
+        order: -1;
+        max-height: 650px;
+        margin-left: 12%;
+        margin-bottom: 20px;
+   }
+    
+    #topVideo {
+        width: 48%;
+        max-width: 600px;
+        order: 1;
+   }
+    
+    .eachPhoto {
+        width: 33.33333%;
+    }
+    
+    .aboutMe {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .aboutMeSection {
+        width: 50%;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .profilePic {
+        margin-left: 100px;
+
+    }
+    
+    .aboutMeInfo {
+        padding: 0px 30px;
+    }
+    
+    .footer {
+        flex: 0 0 auto;
+        
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
